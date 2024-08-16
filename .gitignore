@@ -397,3 +397,8 @@ FodyWeavers.xsd
 *.exe
 *.dll
 *.log
+*.ico
+*.png
+*.jpg
+*.jpeg
+*.webp
