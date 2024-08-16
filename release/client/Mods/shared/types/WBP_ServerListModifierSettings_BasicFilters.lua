@@ -1,0 +1,42 @@
+---@meta
+
+---@class UWBP_ServerListModifierSettings_BasicFilters_C : UUserWidget
+---@field UberGraphFrame FPointerToUberGraphFrame
+---@field ModdedFilter UWBP_ServerListModifierSetting_FilterRule_C
+---@field NoPasswordToggle UWBP_ServerListModifierSetting_FilterRule_Toggle_C
+---@field NotFullToggle UWBP_ServerListModifierSetting_FilterRule_Toggle_C
+---@field SameVersionToggle UWBP_ServerListModifierSetting_FilterRule_Toggle_C
+---@field SectionContainer UWBP_GameModifierSettingsSection_C
+---@field SettingsListVBox UVerticalBox
+---@field SortByOrder UWBP_ModifierSetting_ComboBox_C
+---@field SortByPreference UWBP_ModifierSetting_ComboBox_C
+---@field SupporterOnlyFilter UWBP_ServerListModifierSetting_FilterRule_C
+---@field OnFilterSettingsChanged FWBP_ServerListModifierSettings_BasicFilters_COnFilterSettingsChanged
+---@field OnSortPreferenceChanged FWBP_ServerListModifierSettings_BasicFilters_COnSortPreferenceChanged
+UWBP_ServerListModifierSettings_BasicFilters_C = {}
+
+---@param bActiveOnly boolean
+---@param FilterRules TMap<TSubclassOf<UHDServerListFilterRule>, FHDFilterRuleParams>
+function UWBP_ServerListModifierSettings_BasicFilters_C:GetFilterRules(bActiveOnly, FilterRules) end
+---@param SortPreference FFServerSortPreference
+function UWBP_ServerListModifierSettings_BasicFilters_C:GetSelectedServerSortPreference(SortPreference) end
+---@param SelectedItem FString
+---@param SelectionType ESelectInfo::Type
+function UWBP_ServerListModifierSettings_BasicFilters_C:BndEvt__SortByPreference_K2Node_ComponentBoundEvent_0_OnSelectionChanged__DelegateSignature(SelectedItem, SelectionType) end
+function UWBP_ServerListModifierSettings_BasicFilters_C:BndEvt__SectionContainer_K2Node_ComponentBoundEvent_1_OnActivated__DelegateSignature() end
+function UWBP_ServerListModifierSettings_BasicFilters_C:BndEvt__SectionContainer_K2Node_ComponentBoundEvent_2_OnDeactivated__DelegateSignature() end
+---@param SelectedItem FString
+---@param SelectionType ESelectInfo::Type
+function UWBP_ServerListModifierSettings_BasicFilters_C:BndEvt__SortByOrder_K2Node_ComponentBoundEvent_3_OnSelectionChanged__DelegateSignature(SelectedItem, SelectionType) end
+function UWBP_ServerListModifierSettings_BasicFilters_C:OnInitialized() end
+---@param Rule TSubclassOf<UHDServerListFilterRule>
+---@param RuleParams FHDFilterRuleParams
+function UWBP_ServerListModifierSettings_BasicFilters_C:FilterSettingChanged(Rule, RuleParams) end
+---@param EntryPoint int32
+function UWBP_ServerListModifierSettings_BasicFilters_C:ExecuteUbergraph_WBP_ServerListModifierSettings_BasicFilters(EntryPoint) end
+---@param ActiveFilters TMap<TSubclassOf<UHDServerListFilterRule>, FHDFilterRuleParams>
+function UWBP_ServerListModifierSettings_BasicFilters_C:OnFilterSettingsChanged__DelegateSignature(ActiveFilters) end
+---@param SortPreference FFServerSortPreference
+function UWBP_ServerListModifierSettings_BasicFilters_C:OnSortPreferenceChanged__DelegateSignature(SortPreference) end
+
+
