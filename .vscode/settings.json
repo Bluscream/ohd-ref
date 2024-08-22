@@ -1,0 +1,14 @@
+{
+  "json.schemas": [
+    {
+      "fileMatch": ["maps.json"],
+      "url": "file:///C:/Users/blusc/AppData/Local/Temp/ohd-ref/schemas/maps.schema.json"
+    }
+  ],
+  "json.schemas.remote": [
+    {
+      "fileMatch": ["maps.json"],
+      "url": "https://github.com/Bluscream/ohd-ref/raw/dev/schemas/maps.schema.json"
+    }
+  ]
+}
