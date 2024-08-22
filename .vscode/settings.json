@@ -3,12 +3,20 @@
     {
       "fileMatch": ["maps.json"],
       "url": "file:///C:/Users/blusc/AppData/Local/Temp/ohd-ref/schemas/maps.schema.json"
+    },
+    {
+      "fileMatch": ["mods.json"],
+      "url": "file:///C:/Users/blusc/AppData/Local/Temp/ohd-ref/schemas/mods.schema.json"
     }
   ],
   "json.schemas.remote": [
     {
       "fileMatch": ["maps.json"],
       "url": "https://github.com/Bluscream/ohd-ref/raw/dev/schemas/maps.schema.json"
+    },
+    {
+      "fileMatch": ["mdos.json"],
+      "url": "https://github.com/Bluscream/ohd-ref/raw/dev/schemas/mods.schema.json"
     }
   ]
 }

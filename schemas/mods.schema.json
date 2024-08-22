@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Mods",
+    "additionalProperties": false,
+    "definitions": {
+        "Mods": {
+            "type": "object",
+            "uniqueItems": true,
+            "additionalProperties": {
+                "$ref": "#/definitions/Mod"
+            },
+            "title": "Mods",
+            "description": "Dictionary of defined mods"
+        },
+        "Mod": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "url": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "upk": {
+                    "type": "string",
+                    "examples": [
+                        "Vao\\Content\\Paks\\WindowsNoEditor\\VaoHarshDoorstop-WindowsNoEditor.pak"
+                    ]
+                },
+                "umod": {
+                    "type": "string",
+                    "examples": [
+                        "\\Vao\\Vao.uplugin"
+                    ]
+                }
+            },
+            "required": [
+                "url"
+            ],
+            "title": "Mod",
+            "description": "Mod Definition"
+        }
+    }
+}

@@ -34,7 +34,7 @@
                     "description": "Path to the maps .umap file within the .pak"
                 },
                 "mod": {
-                    "$ref": "#/definitions/Mod"
+                    "type": "string"
                 }
             },
             "required": [
@@ -50,20 +50,6 @@
                 "training"
             ],
             "title": "Game Mode"
-        },
-        "Mod": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "url": {
-                    "type": "string"
-                },
-                "name": {
-                    "type": "string"
-                }
-            },
-            "title": "Mod",
-            "description": "Mod the map originates from"
         }
     }
 }
